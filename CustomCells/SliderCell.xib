@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCellSlider" id="f4e-LM-Fle" customClass="CustomCell" customModule="ExpandableTable" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f4e-LM-Fle" id="fmO-TO-sW4">
+                <frame key="frameInset" width="375" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cNW-Jb-zah">
+                        <connections>
+                            <action selector="handleSliderValueChange:" destination="f4e-LM-Fle" eventType="valueChanged" id="teh-0p-FRu"/>
+                        </connections>
+                    </slider>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cNW-Jb-zah" firstAttribute="leading" secondItem="fmO-TO-sW4" secondAttribute="leading" constant="8" id="M1s-oY-zSu"/>
+                    <constraint firstItem="cNW-Jb-zah" firstAttribute="top" secondItem="fmO-TO-sW4" secondAttribute="top" id="nFi-Jm-URH"/>
+                    <constraint firstAttribute="bottom" secondItem="cNW-Jb-zah" secondAttribute="bottom" id="pGG-2J-7jo"/>
+                    <constraint firstAttribute="trailing" secondItem="cNW-Jb-zah" secondAttribute="trailing" constant="8" id="z9C-3M-o7d"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="slExperienceLevel" destination="cNW-Jb-zah" id="DWg-NC-C3q"/>
+            </connections>
+            <point key="canvasLocation" x="-34" y="-167"/>
+        </tableViewCell>
+    </objects>
+</document>

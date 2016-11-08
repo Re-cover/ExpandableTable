@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCellDatePicker" id="Fzn-r1-qkv" customClass="CustomCell" customModule="ExpandableTable" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="270"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fzn-r1-qkv" id="dDs-Rl-DCy">
+                <frame key="frameInset" width="375" height="269"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="mCV-MF-yJ8">
+                        <date key="date" timeIntervalSinceReferenceDate="500262166.60503399">
+                            <!--2016-11-08 01:42:46 +0000-->
+                        </date>
+                    </datePicker>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2a9-8T-lpV">
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="23Z-jN-tIQ"/>
+                            <constraint firstAttribute="height" constant="40" id="vKi-7Y-gaa"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal" title="Set"/>
+                        <connections>
+                            <action selector="setDate:" destination="Fzn-r1-qkv" eventType="touchUpInside" id="Mlf-3a-24h"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="mCV-MF-yJ8" secondAttribute="trailing" id="MKh-bm-oTr"/>
+                    <constraint firstItem="2a9-8T-lpV" firstAttribute="top" secondItem="mCV-MF-yJ8" secondAttribute="bottom" id="PQR-9R-q8p"/>
+                    <constraint firstItem="mCV-MF-yJ8" firstAttribute="top" secondItem="dDs-Rl-DCy" secondAttribute="top" id="fzq-YO-gXB"/>
+                    <constraint firstItem="mCV-MF-yJ8" firstAttribute="leading" secondItem="dDs-Rl-DCy" secondAttribute="leading" id="lqb-VO-k2g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="2a9-8T-lpV" firstAttribute="centerX" secondItem="Fzn-r1-qkv" secondAttribute="centerX" id="hUY-kg-ZCP"/>
+            </constraints>
+            <connections>
+                <outlet property="datePicker" destination="mCV-MF-yJ8" id="OXG-2o-KuO"/>
+            </connections>
+            <point key="canvasLocation" x="-118" y="-174"/>
+        </tableViewCell>
+    </objects>
+</document>

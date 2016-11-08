@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idCellTextfield" id="GKt-KF-STL" customClass="CustomCell" customModule="ExpandableTable" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GKt-KF-STL" id="par-vB-XFc">
+                <frame key="frameInset" width="375" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mEi-8V-UOQ">
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="mEi-8V-UOQ" secondAttribute="bottom" constant="6" id="09z-bc-2LQ"/>
+                    <constraint firstItem="mEi-8V-UOQ" firstAttribute="leading" secondItem="par-vB-XFc" secondAttribute="leading" constant="16" id="EWN-NM-xSq"/>
+                    <constraint firstAttribute="trailing" secondItem="mEi-8V-UOQ" secondAttribute="trailing" constant="16" id="w5q-6M-b5M"/>
+                    <constraint firstItem="mEi-8V-UOQ" firstAttribute="top" secondItem="par-vB-XFc" secondAttribute="top" constant="6" id="wtW-ki-zTd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textField" destination="mEi-8V-UOQ" id="UCE-Lt-3Qh"/>
+            </connections>
+            <point key="canvasLocation" x="95" y="-75"/>
+        </tableViewCell>
+    </objects>
+</document>
